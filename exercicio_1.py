@@ -56,3 +56,11 @@ genes = {
 }
 
 # Criar seu código a partir daqui
+nome_gene = input("Digite o nome do gene: ").strip().upper()
+
+# Verifica se o gene está no dicionário
+if nome_gene in genes:
+    tamanho = genes[nome_gene]
+    print(f"O tamanho do gene {nome_gene} é {tamanho} pb.")
+else:
+    print("Gene não encontrado.")
